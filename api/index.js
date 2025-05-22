@@ -9,7 +9,7 @@ const port = process.env.PORT || 4000;
 const DBSTRING =
     "mongodb+srv://raushan8292kumardeo:ra0409ku@cluster0.evi9cj4.mongodb.net/notesDB";
 mongoose.connect(DBSTRING).then(() => {
-    app.get("/", (req, res) => {
+    app.get("/mongo", (req, res) => {
         let response = { message: "API working fine!!!" };
         res.json(response);
     });
